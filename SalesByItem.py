@@ -37,7 +37,6 @@ def fetch_zoho_sales_data(access_token, organization_id, from_date, to_date,firs
     headers = {
         'Authorization': f'Zoho-oauthtoken {access_token}'
     }
-
     response = requests.get(API_ENDPOINT, headers=headers, params=params)
 
     if response.status_code != 200:
